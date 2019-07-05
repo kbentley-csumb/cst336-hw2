@@ -17,6 +17,12 @@
     </h4>
     <div id="gamesetup">
         &nbsp;<input type="number" id="gridSize" value=10> &nbsp;
+        <select id="gameDifficulty">
+            <option value="0.1">Easy</option>
+            <option value="0.2">Medium</option>
+            <option value="0.4">Hard</option>
+            <option value="0.8">Impossible</option>
+        </select>
         <button id="startGameBtn" onclick="startGame()">Start Game</button>
     </div>
     <div id="gameStatus"> 

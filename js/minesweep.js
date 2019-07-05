@@ -1,15 +1,14 @@
 var gridSize = 10;
 var gameActive = false;
 var gameMatrix = [];
+var gameDifficulty = 0.1;
 
 function setupMines() {
-    // 20% of the cells will have mines
-    var pct = 0.1;
     for(var row=0;row<gridSize;row++) {
         var rowArray = []
         for(var col=0;col<gridSize;col++) {
             rndNum = Math.random();
-            if(rndNum < pct) {
+            if(rndNum < gameDifficulty) {
                 rowArray.push('x');//'x' is a mine
             }
             else {
@@ -91,6 +90,7 @@ function countNeighborMines(row, col) {
 function startGame() {
     $("#cheatBtn").css("display","block");
     gridSize = $("#gridSize").val();
+    gameDifficulty = $("#gameDifficulty").val();
     var gameDiv = $("#game");
     $("#gamesetup").hide();
     $("#game").empty();
