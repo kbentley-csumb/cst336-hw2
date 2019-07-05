@@ -13,16 +13,20 @@
     </head>
     <body>
     <h1>Minesweep</h1>
-    
+    <h4>Click on a cell to explore it. Shift-click to mark a cell as potentially having a mine. You win the game when you explore all of the cells that don't have a mine, you lose if you click on a cell with a mine.
+    </h4>
     <div id="gamesetup">
         &nbsp;<input type="number" id="gridSize" value=10> &nbsp;
         <button id="startGameBtn" onclick="startGame()">Start Game</button>
+    </div>
+    <div id="gameStatus"> 
+        
     </div>
     <div display="none" id="game">
 
     </div>
     <button id="cheatBtn" onclick="cheat()" >Cheat</button>
-    <div id="gameStatus"> </div>
+    
     <script src="js/minesweep.js"> </script>
     </body>
 </html>
