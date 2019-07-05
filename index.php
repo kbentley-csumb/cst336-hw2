@@ -17,7 +17,7 @@
     <h1>Minesweep</h1>
     <h4>Your job is to clear the sea of underwater mines, so the ships can safely pass through. <br/><br/>
     Click on a cell to explore it. Shift-click to mark a cell as potentially having a mine. You win the game when you explore all of the cells that don't have a mine, you lose if you click on a cell with a mine.
-        <br/>If a cell touches one or more mines, the number touching the cell will be shown. Diagnol/Corner mines are considered as touching.
+        <br/>If a cell touches one or more mines, the number touching the cell will be shown. Diagonal/Corner mines are considered as touching.
     </h4>
     <div id="gamesetup">
         &nbsp;<input type="text" id="gridSize" value=10 max-width="30px"> &nbsp;
