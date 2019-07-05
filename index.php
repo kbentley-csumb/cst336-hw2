@@ -18,7 +18,7 @@
     <h4>Click on a cell to explore it. Shift-click to mark a cell as potentially having a mine. You win the game when you explore all of the cells that don't have a mine, you lose if you click on a cell with a mine.
     </h4>
     <div id="gamesetup">
-        &nbsp;<input type="number" id="gridSize" value=10 max-width="30px"> &nbsp;
+        &nbsp;<input type="text" id="gridSize" value=10 max-width="30px"> &nbsp;
         <select id="gameDifficulty">
             <option value="0.1">Easy</option>
             <option value="0.2">Medium</option>

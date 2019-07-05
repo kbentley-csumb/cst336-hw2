@@ -89,7 +89,7 @@ function countNeighborMines(row, col) {
 
 function startGame() {
     $("#cheatBtn").css("display","inline-block");
-    gridSize = $("#gridSize").val();
+    gridSize = parseInt($("#gridSize").val());
     gameDifficulty = $("#gameDifficulty").val();
     var gameDiv = $("#game");
     $("#gamesetup").hide();
