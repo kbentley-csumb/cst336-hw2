@@ -207,6 +207,7 @@ function cellClick(event,img) {
         if(gameMatrix[row][col]=='x') {
             $("#gameStatus").empty();
             $("#gameStatus").append("<h2>You Lost!</h2>");
+            $("#gameStatus").append("<button id='reloadBtn' onclick='location.reload()'>Play Another Game</button>");
             $(img).attr("src","img/mine.png");
             return;
         }

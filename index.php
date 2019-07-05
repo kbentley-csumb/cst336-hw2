@@ -28,11 +28,10 @@
         &nbsp;
         <button id="startGameBtn" onclick="startGame()">Start Game</button>
     </div>
-    <h2>
     <div id="gameStatus"> 
         
     </div>
-    </h2>
+    <br/>
     <div display="none" id="game">
 
     </div>
