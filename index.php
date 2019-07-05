@@ -13,6 +13,7 @@
     </head>
     <body>
     <h1>Minesweep</h1>
+    
     <div id="gamesetup">
         &nbsp;<input type="number" id="gridSize" value=10> &nbsp;
         <button id="startGameBtn" onclick="startGame()">Start Game</button>
@@ -20,6 +21,8 @@
     <div display="none" id="game">
 
     </div>
+    <button id="cheatBtn" onclick="cheat()" >Cheat</button>
+    <div id="gameStatus"> </div>
     <script src="js/minesweep.js"> </script>
     </body>
 </html>
