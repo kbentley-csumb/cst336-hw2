@@ -88,13 +88,13 @@ function countNeighborMines(row, col) {
 }
 
 function startGame() {
-    $("#cheatBtn").css("display","block");
+    $("#cheatBtn").css("display","inline-block");
     gridSize = $("#gridSize").val();
     gameDifficulty = $("#gameDifficulty").val();
     var gameDiv = $("#game");
     $("#gamesetup").hide();
     $("#game").empty();
-    var gameTable = "<table cols ='" + gridSize + "'>";
+    var gameTable = "<table align='center' id='gameTable' cols ='" + gridSize + "'>";
     for(var row=0;row<gridSize;row++) {
         gameTable += "<tr>\n";
         for(var col=0;col<gridSize;col++) {
@@ -107,6 +107,7 @@ function startGame() {
     $("#game").append(gameTable);
     $("#game").show();
     setupMines();
+    gameActive = true;
 }
 
 function detectWin() {
