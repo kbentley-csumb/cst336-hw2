@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <div id="pageContainer">
     <main>
     <h1>Minesweep</h1>
     <h4>Click on a cell to explore it. Shift-click to mark a cell as potentially having a mine. You win the game when you explore all of the cells that don't have a mine, you lose if you click on a cell with a mine.
@@ -27,9 +28,11 @@
         &nbsp;
         <button id="startGameBtn" onclick="startGame()">Start Game</button>
     </div>
+    <h2>
     <div id="gameStatus"> 
         
     </div>
+    </h2>
     <div display="none" id="game">
 
     </div>
@@ -41,7 +44,7 @@
     <footer>
         <br/>
         <br/>
-            CST336 Internet Programming. <br/>
+            <h3>CST336 Internet Programming.</h3> <br/>
             <details>
             <summary>Background Image</summary>
               Background image from <a href="https://www.pexels.com/photo/sea-boat-ship-high-dynamic-range-15810/">https://www.pexels.com/photo/sea-boat-ship-high-dynamic-range-15810/</a><br>
@@ -52,5 +55,6 @@
                 <br/>
                 <img src="img/otter-small.jpg" alt="Otter Logo" />
         </footer>
+    </div> <!--pageContainer-->
     </body>
 </html>

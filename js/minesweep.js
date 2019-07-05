@@ -96,10 +96,10 @@ function startGame() {
     $("#game").empty();
     var gameTable = "<table align='center' id='gameTable' cols ='" + gridSize + "'>";
     for(var row=0;row<gridSize;row++) {
-        gameTable += "<tr>\n";
+        gameTable += "<tr class='mineRow'>\n";
         for(var col=0;col<gridSize;col++) {
-            gameTable += "<td>";
-            gameTable += "<img src='img/orange.png' onclick='cellClick(event,this)' id='" + row + "_" + col + "'>\n";
+            gameTable += "<td class='mineCell'>";
+            gameTable += "<img src='img/orange.png' onclick='cellClick(event,this)' class='gameIcon' id='" + row + "_" + col + "'>\n";
             gameTable += "</td>\n";
         }
         gameTable += "</tr>\n";

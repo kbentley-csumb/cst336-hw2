@@ -19,11 +19,23 @@ main {
     text-align: center;
     justify-content: center;
     display: flex;
-    padding-bottom: 25rem;    /* Footer height */
+    padding-bottom: 40rem;    /* Footer height */
 }
 
 h1 {
     color: white !important;
+}
+
+
+h2 {
+    color: yellow !important;
+    font-size: 2.0em !important;
+}
+
+
+h3 {
+    color: lightgray !important;
+    font-size: 0.7em;
 }
 
 h4 {
@@ -37,7 +49,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 25rem;
+    height: 40rem;
 }
 
 #gridSize {
@@ -56,12 +68,49 @@ footer {
     margin-right: auto;
     width: 690px;
     text-align: center;
+
 }
 
 .gameTable {
-    margin: 0 auto;
+    margin: 0 auto;    
+    border-collapse: collapse;
+    border: 0;
+    row-gap: 0;
 }
 
 #gameStatus {
     color: white;
+}
+
+#gamesetup {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 5px;
+}
+
+.mineCell {
+    padding: 0px;    
+}
+
+.mineRow {
+    padding: 50px;
+    margin: 0;
+    row-gap: 0px;
+}
+
+.gameIcon {
+    display: block;
+}
+
+details {
+    color: lightgreen;
+}
+
+a:link{
+    color: lightgreen;
+    
+}
+
+a:visited{
+    color: lightgreen;
+    
 }
