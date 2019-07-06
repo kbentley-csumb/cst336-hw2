@@ -118,3 +118,7 @@ a:visited{
 button {
     color: black !important;
 }
+
+.whiteText {
+    color: white;
+}

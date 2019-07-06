@@ -20,7 +20,7 @@
         <br/>If a cell touches one or more mines, the number touching the cell will be shown. Diagonal/Corner mines are considered as touching.
     </h4>
     <div id="gamesetup">
-        &nbsp;<input type="text" id="gridSize" value=10 max-width="30px"> &nbsp;
+        <span class="whiteText">Select the grid size: </span>&nbsp;<input type="text" id="gridSize" value=10 max-width="30px"> &nbsp;
         <select id="gameDifficulty">
             <option value="0.1">Easy</option>
             <option value="0.2">Medium</option>
